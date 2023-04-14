@@ -1597,6 +1597,18 @@ class Hush(KomodoMixin, EquihashMixin, Coin):
     REORG_LIMIT = 800
 
 
+class NFTX(KomodoMixin, EquihashMixin, Coin):
+    NAME = "NFTX"
+    SHORTNAME = "NFTX"
+    NET = "mainnet"
+    TX_COUNT = 256
+    TX_COUNT_HEIGHT = 128
+    TX_PER_BLOCK = 2
+    RPC_PORT = 53959
+    REORG_LIMIT = 800
+    PEERS = []
+
+    
 class Monaize(KomodoMixin, EquihashMixin, Coin):
     NAME = "Monaize"
     SHORTNAME = "MNZ"
